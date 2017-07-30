@@ -1,4 +1,6 @@
-## Start Coding
+## Start Coding - Leetcode - Word Break
+
+有点茫然、急躁，凌晨4点不睡觉，想一口气把leetcode做完。。。
 
 Leetcode 139. Word Break
 
