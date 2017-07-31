@@ -67,6 +67,7 @@ class Solution(object):
 
 """
 212. Word Search II
+same matrix, but search for a list of words
 
 o a a n
 e t a e
@@ -75,7 +76,7 @@ i f l v
 
 eat, oath
 """
-# DFS without recursion
+# DFS without recursion - solution got TLE
 class Solution(object):
     def findWords(self, board, words):
         """
@@ -100,6 +101,39 @@ class Solution(object):
                                     if (ni, nj) not in path and board[ni][nj] == word[k+1]:
                                         stack.append((ni, nj, k+1, path | set([(ni, nj)])))
         return list(res)
+
+# DFS and Trie(implemented by dict) - faster solution
+# Build trie from list of words, for each char in matrix, search in trie, add to result set if char is end of a word
+class Solution:
+    def findWords(self, board, words):
+        trie = {}
+        for w in words:
+            t = trie
+            for c in w:
+                if c not in t:
+                    t[c] = {}
+                t = t[c]
+            t['#'] = '#'
+        self.res = set()
+        self.used = [[False] * len(board[0]) for _ in range(len(board))]
+        for i in range(len(board)):
+            for j in range(len(board[0])):
+                self.find(board, i, j, trie, '')
+        return list(self.res)
+
+    def find(self, board, i, j, trie, pre):
+        if '#' in trie:
+            self.res.add(pre)
+        if i < 0 or i >= len(board) or j < 0 or j >= len(board[0]):
+            return
+        if not self.used[i][j] and board[i][j] in trie:
+            self.used[i][j] = True
+            self.find(board, i+1, j, trie[board[i][j]], pre + board[i][j])
+            self.find(board, i-1, j, trie[board[i][j]], pre + board[i][j])
+            self.find(board, i, j+1, trie[board[i][j]], pre + board[i][j])
+            self.find(board, i, j-1, trie[board[i][j]], pre + board[i][j])
+            self.used[i][j] = False
+            
 
 board = [['o', 'a', 'a', 'n'], ['e', 't', 'a', 'e'], ['i', 'h', 'k', 'r'], ['i', 'f', 'l', 'v']]
 words = ["oath","pea","eat","rain"]
