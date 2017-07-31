@@ -1,8 +1,15 @@
+---
+layout: post
+categories: [code]
+date:   2017-07-30 14:30:00
+comments: true
+---
+
 ## Leetcode The Maze II
 
 Here we used bfs (with heap) to implement Dijkstra
 
-```
+~~~ python
 def shortestDistance(maze, start, destination):
     dest = tuple(destination)
     m, n = len(maze), len(maze[0])
@@ -31,4 +38,4 @@ def shortestDistance(maze, start, destination):
             l, np = go(cur, direction)
             heapq.heappush(q, (length + l, np))
     return -1
-```
+~~~

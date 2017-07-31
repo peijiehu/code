@@ -1,6 +1,13 @@
+---
+layout: post
+categories: [code]
+date:   2017-07-30 05:00:00
+comments: true
+---
+
 ## [LeetCode]Add and Search Word - Data structure design
 
-```
+~~~ python
 class TrieNode:
     def __init__(self):
         self.children = {}
@@ -10,7 +17,7 @@ class WordDictionary:
 
     def __init__(self):
         self.root = TrieNode()
-        
+
     def add(self, word):
         node = self.root
         for c in word:
@@ -18,10 +25,10 @@ class WordDictionary:
                 node.children[c] = TrieNode(c)
             node = node.children[c]
         node.is_word = True
-        
+
     def search(self, word):
         return self._find(self.root, word)
-        
+
     def _find(self, node, word):
         if word == '':
             return node.is_word
@@ -34,4 +41,4 @@ class WordDictionary:
             if child:
                 return self.find(child, w[1:])
         return False
-```
+~~~

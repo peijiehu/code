@@ -1,6 +1,15 @@
-Word search by using DFS.
+---
+layout: post
+categories: [code]
+date:   2017-07-30 04:30:00
+comments: true
+---
+
+## Word search with DFS
+
 I tried both with and without recursion. Without recursion I need to keep track of the path for current element, can't just use `visited` set because if an element is visited but not used for one path, it shouldn't be eliminated since other path may find it useful.
-```
+
+~~~ python
 """79. Word Search"""
 # DFS without recursion
 class Solution(object):
@@ -133,7 +142,7 @@ class Solution:
             self.find(board, i, j+1, trie[board[i][j]], pre + board[i][j])
             self.find(board, i, j-1, trie[board[i][j]], pre + board[i][j])
             self.used[i][j] = False
-            
+
 
 board = [['o', 'a', 'a', 'n'], ['e', 't', 'a', 'e'], ['i', 'h', 'k', 'r'], ['i', 'f', 'l', 'v']]
 words = ["oath","pea","eat","rain"]
@@ -146,4 +155,4 @@ words = ["aba","baa","bab","aaab","aaa","aaaa","aaba"]
 
 solution = Solution()
 print solution.findWords(board, words)
-```
+~~~
