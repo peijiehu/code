@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[LeetCode]Add and Search Word - Data structure design"
+title: "[LeetCode] Word search with DFS"
 excerpt: ''
 categories: [code]
 date:   2017-07-30 04:30:00

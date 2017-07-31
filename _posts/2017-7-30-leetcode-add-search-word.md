@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "[LeetCode]Add and Search Word - Data structure design"
+title: "[LeetCode] Add and Search Word - Data structure design"
 excerpt: ''
 categories: [code]
 date:   2017-07-30 05:00:00
 comments: true
 ---
 
-## [LeetCode]Add and Search Word - Data structure design
+## [LeetCode] Add and Search Word - Data structure design
 
 ~~~ python
 class TrieNode:

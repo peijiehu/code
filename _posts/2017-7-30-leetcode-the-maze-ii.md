@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[LeetCode]Add and Search Word - Data structure design"
+title: "[LeetCode] Leetcode The Maze II"
 excerpt: ''
 categories: [code]
 date:   2017-07-30 14:30:00
