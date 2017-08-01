@@ -1,4 +1,4 @@
 - name: Browsery
-  descr: "Browsery is a browser automation test framework built on top of minitest(ruby) and selenium-webdriver. Edit"
+  descr: "Browsery is a browser automation test framework built on top of minitest(ruby) and selenium-webdriver."
   image: pong.png
   github: https://github.com/peijiehu/browsery
