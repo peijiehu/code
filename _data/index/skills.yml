@@ -2,5 +2,5 @@
 
 label: Ability
 id : cs
-aspects: Motivation, Python, Ruby
-percentage: 100, 90, 80
+aspects: Motivation, Web App, Machine Learning, Automation, Python, Java, Ruby
+percentage: 100, 80, 50, 70, 90, 80, 80
