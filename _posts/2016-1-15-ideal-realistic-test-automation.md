@@ -2,7 +2,7 @@
 layout: post
 title: Ideal vs. Realistic Test Automation
 excerpt: ''
-categories: [code]
+categories: [note]
 date:   2016-01-15 00:00:00
 comments: true
 ---

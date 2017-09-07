@@ -2,7 +2,7 @@
 layout: post
 title: Data Pyramid and Challenges
 excerpt: ''
-categories: [code]
+categories: [note]
 date:   2017-06-12 00:00:00
 comments: true
 ---
