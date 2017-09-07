@@ -40,7 +40,7 @@ owner:
   bio: "does something."
   email: peijie@peijiehu.com
   disqus-shortname: #username
-  twitter: #username
+  twitter: peijiehu
   facebook: #username
   google:
     plus: #username
@@ -49,9 +49,9 @@ owner:
     ad-client:
     ad-slot:
   bing-verify:
-  github: peijiehu #username
+  github: peijiehu
   stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
-  linkedin: #username
+  linkedin: peijiehu
   xing: #username
   instagram: #username
   lastfm: #username
