@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[LeetCode] Word search with DFS"
+title: "Word search with DFS"
 excerpt: ''
 categories: [code]
 date:   2017-07-30 04:30:00

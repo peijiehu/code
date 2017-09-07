@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "[LeetCode] Leetcode The Maze II"
+title: "The Maze II"
 excerpt: ''
 categories: [code]
 date:   2017-07-30 14:30:00
 comments: true
 ---
 
-## Leetcode The Maze II
+## The Maze II
 
 Here we used bfs (with heap) to implement Dijkstra
 

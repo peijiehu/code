@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Start Coding - Leetcode: Word Break"
-excerpt: "First post: leetcode 139. Word Break"
+title: "Start Coding - Word Break"
+excerpt: "First post: Word Break"
 categories: [code]
 date:   2017-07-30 04:00:00
 comments: true
 ---
 
-## Start Coding - Leetcode - Word Break
+## Start Coding - Word Break
 
 有点茫然、急躁，凌晨4点不睡觉，想一口气把leetcode做完。。。
 
