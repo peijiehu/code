@@ -3,9 +3,9 @@
 # Site wide configuration
 ####################################
 #
-title: Code Log
+title: Peijie Hu
 email: peijie@peijiehu.com
-description: A programmer's coding blog
+description: A programmer's blog on coding excercises and software development, edited by Peijie Hu.
 url: https://peijiehu.github.io/code # the base hostname & protocol for your site
 
 
@@ -44,7 +44,7 @@ owner:
   facebook: #username
   google:
     plus: #username
-    analytics: #UA-62251910-2
+    analytics: UA-106125145-1
     verify:
     ad-client:
     ad-slot:
